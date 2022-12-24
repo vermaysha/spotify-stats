@@ -1,0 +1,19 @@
+{
+  "name": "spotify-stats",
+  "version": "1.0.0",
+  "description": "Get spotify stats for profile page",
+  "main": "dist/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vermaysha/spotify-stats.git"
+  },
+  "author": "Ashary Vermaysha",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vermaysha/spotify-stats/issues"
+  },
+  "homepage": "https://github.com/vermaysha/spotify-stats#readme"
+}
