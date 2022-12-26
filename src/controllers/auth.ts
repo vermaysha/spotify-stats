@@ -21,7 +21,7 @@ export async function auth(req: VercelRequest, res: VercelResponse) {
   const spotifyAPI = new SpotifyWebApi({
     clientId: Env.getSpotifyClientId(),
     clientSecret: Env.getSpotifyClienSecret(),
-    redirectUri: 'http://localhost:3000/api/auth'
+    redirectUri: `${Env.getBaseUrl()}/api/auth`
   })
 
   const code = req.query.code ?? ''
