@@ -33,12 +33,32 @@ Spotify-stats is a program for getting statistics such as favorite music lists a
 
 <div><img src="https://i.imgur.com/3hYLBXd.png"></div>
 
-5. Next, we need to retrieve a Refresh Token through [Authoration Code flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow) by accessing "{YOUR_BASE_URL}/api/login" Replace {YOUR_BASE_URL} by domain given by vercel
+5. Next, we need to retrieve a Refresh Token through [Authoration Code flow](https://developer.spotify.com/documentation/general/guides/authorization-guide/#authorization-code-flow) by accessing "{YOUR_BASE_URL}/api/login" Replace {YOUR_BASE_URL} by domain given by vercel.
+
 
 6. Then press **Agree** button, and you will be redirected to get your SPOTIFY_REFRESH_TOKEN
 
+<div><img src="https://i.imgur.com/bWcNLog.png"></div>
 
+7. Copy your refresh token and add to SPOTIFY_REFRESH_TOKEN env
 
+<div><img src="https://i.imgur.com/DRJSHAO.png"></div>
+
+8. After add env, please redeploy your application
+
+<div><img src="https://i.imgur.com/3hYLBXd.png"></div>
+
+9. Now you can access by {YOUR_BASE_URL}/api/now-playing or {YOUR_BASE_URL}/api/top-played, or embed as image
+
+````html
+<a href="{YOUR_BASE_URL}/api/now-playing?open=yes">
+  <img src="{YOUR_BASE_URL}/api/now-playing" alt="Now Playing"/>
+</a>
+
+<a href="{YOUR_BASE_URL}/api/now-playing">
+  <img src="{YOUR_BASE_URL}/api/now-playing" alt="Top Played" />
+</a>
+````
 
 # LICENSE
 
